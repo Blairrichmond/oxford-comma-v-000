@@ -13,7 +13,7 @@ def oxford_comma(array)
       else
         string + ', ' + word
       end
-end
+    end
 string
-end
+  end
 end
