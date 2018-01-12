@@ -3,15 +3,17 @@ def oxford_comma(array)
     array.join
   elsif array.size == 2
     array.join(" and ")
-  else 
+  else
     string = ''
     array.each_with_index.map do |word, x|
       string = if array.last == word
         string + ', and ' + word
       elsif x == 0
         word
-      else 
+      else
         string + ', ' + word
-        
-  end
+      end
+end
+string
+end
 end
